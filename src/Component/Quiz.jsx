@@ -50,6 +50,12 @@ export const Quiz = ()=>{
     return (
         <>
         <h1>Weclome to questions</h1>
+        <div>
+            <span>Category</span>
+            <span>{info.category}</span>
+            <span>Level</span>
+            <span>{info.difficulty}</span>
+        </div>
         <div className="question_div">
         {currentPage-1 < lastPage ? <Question question={questions[currentPage-1].question}  incorrect_answers={questions[currentPage-1].incorrect_answers}
             correct_answer = {questions[currentPage-1].correct_answer} no={currentPage}/>: ''}
