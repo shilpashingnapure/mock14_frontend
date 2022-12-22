@@ -18,7 +18,7 @@ export const Quiz = ()=>{
     let navigate = useNavigate()
     console.log(info , lastPage)
     useEffect(()=>{
-        fetch(`http://localhost:5000/questions?category=${info.category}&difficulty=${info.difficulty}`).then((res)=>{
+        fetch(`https://mock14-backend-imka.onrender.com/questions?category=${info.category}&difficulty=${info.difficulty}`).then((res)=>{
             return res.json()
         }).then((res)=>{
             console.log(res)
