@@ -108,3 +108,14 @@ button{
     border: none;
     cursor: pointer;
 }
+
+.heading{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.heading > p{
+    font-weight: 700;
+}
